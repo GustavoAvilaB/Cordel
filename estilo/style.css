@@ -46,6 +46,7 @@
             text-decoration: underline;
         }
         section{
+            font-family: var(--fonte2);
             background-color: white;
             text-align: left;
             font-size: 1em;
@@ -53,7 +54,6 @@
             font-stretch: expanded;
         }
         section > p {
-            font-family: var(--fonte2);
             font-size: 3.5vw;
             line-height: 2;        
             font-style: italic; 
