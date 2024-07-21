@@ -1,19 +1,21 @@
 @charset "UTF=8";
-        @font-face {
-            font-family:'Sriracha';
-            src: url(fontes/Sriracha/Sriracha-Regular.ttf) format(truetype);
-            font-family:'PassionOne';
-            src: url(fontes/Passion_One/PassionOne-Regular.ttf) format(truetype);
-        }
-        :root{
-            --fonte1:"PassionOne", sans-serif;
-            --fonte2:"Sriracha", cursive, serif;
-        }
-        body{
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursiva;
+    --fonte3: 'Sriracha', cursive, sans-serif
+}
+
+        html, body{
             margin: 0px;
             padding: 0px;
             height: 96vh;
             background-color: white;
+            font-family: var(--fonte1);
         }
             
         header{
@@ -24,7 +26,7 @@
             text-align: center;
         }
         header > h1{
-            font-family: var(--fonte1);
+            font-family: var(--fonte2);
             font-size: 11vw;
             font-weight: 400; 
             margin: 20px 10px 0px 10px;
@@ -46,17 +48,15 @@
             text-decoration: underline;
         }
         section{
-            font-family: var(--fonte2);
+            font-family: var(--fonte3);
             background-color: white;
             text-align: left;
-            font-size: 1em;
-            font-weight: 800;
+            font-size: 3.5vw;
             font-stretch: expanded;
         }
         section > p {
             font-size: 3.5vw;
-            line-height: 2;        
-            font-style: italic; 
+            line-height: 2;         
             white-space: pre;
             margin: 0px;
             padding: 0px;
@@ -78,14 +78,12 @@
             color: rgba(255, 255, 255, 0.904);
             font-size: 3.5vw;
             line-height: 2em;
-            font-family: var(--fonte2);
+            font-family: var(--fonte3);
             margin-top: 0px;
             width: 500px;
             height: 300px;
             white-space: pre;
             padding: 10px 20px; 
-            font-weight: bold;
-            font-style: italic;
             
         }
         span > p{
@@ -100,14 +98,12 @@
             color: rgba(255, 255, 255, 0.904);
             font-size: 3.5vw;
             line-height: 2em;
-            font-family: var(--fonte2);
+            font-family: var(--fonte3);
             margin-top: 0px;
             width: 500px;
             height: 300px;
             white-space: pre;
             padding: 10px 20px; 
-            font-weight: bold;
-            font-style: italic;
         }
         div{
             height: 47vw;
@@ -121,18 +117,12 @@
         }
 
         footer{
-            background-color: black;
+            background-color: black; 
+            font-family: var(--fonte1);
             color: white;
             margin: auto;
+            padding: 10px; 
             text-align: center;
-            font-size: medium;
-            letter-spacing: 0.5px;
-        }
-        footer > p{
-            padding: 5px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif, Helvetica, sans-serif;
-            font-size: 2vw;
-            font-weight: 600;
         }
         a:hover{
             color: white;
